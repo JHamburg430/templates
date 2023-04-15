@@ -1,0 +1,164 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pg_user",
+        "kind": 5,
+        "importPath": "test.anaconda-postgres.database",
+        "description": "test.anaconda-postgres.database",
+        "peekOfCode": "pg_user = os.getenv('POSTGRES_USER')\nassert pg_user is not None, \"POSTGRES_USER environment variable not set\"\npg_password = os.getenv('POSTGRES_PASSWORD')\nassert pg_password is not None, \"POSTGRES_PASSWORD environment variable not set\"\npg_db = os.getenv('POSTGRES_DB')\nassert pg_db is not None, \"POSTGRES_DB environment variable not set\"\npg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(",
+        "detail": "test.anaconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "pg_password",
+        "kind": 5,
+        "importPath": "test.anaconda-postgres.database",
+        "description": "test.anaconda-postgres.database",
+        "peekOfCode": "pg_password = os.getenv('POSTGRES_PASSWORD')\nassert pg_password is not None, \"POSTGRES_PASSWORD environment variable not set\"\npg_db = os.getenv('POSTGRES_DB')\nassert pg_db is not None, \"POSTGRES_DB environment variable not set\"\npg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(\n        pg_db=pg_db,\n        pg_user=pg_user,",
+        "detail": "test.anaconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "pg_db",
+        "kind": 5,
+        "importPath": "test.anaconda-postgres.database",
+        "description": "test.anaconda-postgres.database",
+        "peekOfCode": "pg_db = os.getenv('POSTGRES_DB')\nassert pg_db is not None, \"POSTGRES_DB environment variable not set\"\npg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(\n        pg_db=pg_db,\n        pg_user=pg_user,\n        pg_host=pg_host,\n        pg_password=pg_password",
+        "detail": "test.anaconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "pg_host",
+        "kind": 5,
+        "importPath": "test.anaconda-postgres.database",
+        "description": "test.anaconda-postgres.database",
+        "peekOfCode": "pg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(\n        pg_db=pg_db,\n        pg_user=pg_user,\n        pg_host=pg_host,\n        pg_password=pg_password\n    ))\nexcept Exception:",
+        "detail": "test.anaconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "test.anaconda-postgres.plot",
+        "description": "test.anaconda-postgres.plot",
+        "peekOfCode": "t = np.arange(0.0, 2.0, 0.01)\ns = 1 + np.sin(2 * np.pi * t)\nfig, ax = plt.subplots()\nax.plot(t, s)\nax.set(xlabel='time (s)', ylabel='voltage (mV)',\n       title='About as simple as it gets, folks')\nax.grid()\nfig.savefig(\"plot.png\")\nplt.show()\nprint('Open test-project/plot.png to see the result!')",
+        "detail": "test.anaconda-postgres.plot",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "test.anaconda-postgres.plot",
+        "description": "test.anaconda-postgres.plot",
+        "peekOfCode": "s = 1 + np.sin(2 * np.pi * t)\nfig, ax = plt.subplots()\nax.plot(t, s)\nax.set(xlabel='time (s)', ylabel='voltage (mV)',\n       title='About as simple as it gets, folks')\nax.grid()\nfig.savefig(\"plot.png\")\nplt.show()\nprint('Open test-project/plot.png to see the result!')",
+        "detail": "test.anaconda-postgres.plot",
+        "documentation": {}
+    },
+    {
+        "label": "pg_user",
+        "kind": 5,
+        "importPath": "test.miniconda-postgres.database",
+        "description": "test.miniconda-postgres.database",
+        "peekOfCode": "pg_user = os.getenv('POSTGRES_USER')\nassert pg_user is not None, \"POSTGRES_USER environment variable not set\"\npg_password = os.getenv('POSTGRES_PASSWORD')\nassert pg_password is not None, \"POSTGRES_PASSWORD environment variable not set\"\npg_db = os.getenv('POSTGRES_DB')\nassert pg_db is not None, \"POSTGRES_DB environment variable not set\"\npg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(",
+        "detail": "test.miniconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "pg_password",
+        "kind": 5,
+        "importPath": "test.miniconda-postgres.database",
+        "description": "test.miniconda-postgres.database",
+        "peekOfCode": "pg_password = os.getenv('POSTGRES_PASSWORD')\nassert pg_password is not None, \"POSTGRES_PASSWORD environment variable not set\"\npg_db = os.getenv('POSTGRES_DB')\nassert pg_db is not None, \"POSTGRES_DB environment variable not set\"\npg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(\n        pg_db=pg_db,\n        pg_user=pg_user,",
+        "detail": "test.miniconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "pg_db",
+        "kind": 5,
+        "importPath": "test.miniconda-postgres.database",
+        "description": "test.miniconda-postgres.database",
+        "peekOfCode": "pg_db = os.getenv('POSTGRES_DB')\nassert pg_db is not None, \"POSTGRES_DB environment variable not set\"\npg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(\n        pg_db=pg_db,\n        pg_user=pg_user,\n        pg_host=pg_host,\n        pg_password=pg_password",
+        "detail": "test.miniconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "pg_host",
+        "kind": 5,
+        "importPath": "test.miniconda-postgres.database",
+        "description": "test.miniconda-postgres.database",
+        "peekOfCode": "pg_host = os.getenv('POSTGRES_HOST')\nassert pg_host is not None, \"POSTGRES_HOST environment variable not set\"\ntry:\n    conn = psycopg2.connect(\"dbname='{pg_db}' user='{pg_user}' host='{pg_host}' password='{pg_password}'\".format(\n        pg_db=pg_db,\n        pg_user=pg_user,\n        pg_host=pg_host,\n        pg_password=pg_password\n    ))\nexcept Exception:",
+        "detail": "test.miniconda-postgres.database",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "test.miniconda-postgres.plot",
+        "description": "test.miniconda-postgres.plot",
+        "peekOfCode": "t = np.arange(0.0, 2.0, 0.01)\ns = 1 + np.sin(2 * np.pi * t)\nfig, ax = plt.subplots()\nax.plot(t, s)\nax.set(xlabel='time (s)', ylabel='voltage (mV)',\n       title='About as simple as it gets, folks')\nax.grid()\nfig.savefig(\"plot.png\")\nplt.show()\nprint('Open test-project/plot.png to see the result!')",
+        "detail": "test.miniconda-postgres.plot",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "test.miniconda-postgres.plot",
+        "description": "test.miniconda-postgres.plot",
+        "peekOfCode": "s = 1 + np.sin(2 * np.pi * t)\nfig, ax = plt.subplots()\nax.plot(t, s)\nax.set(xlabel='time (s)', ylabel='voltage (mV)',\n       title='About as simple as it gets, folks')\nax.grid()\nfig.savefig(\"plot.png\")\nplt.show()\nprint('Open test-project/plot.png to see the result!')",
+        "detail": "test.miniconda-postgres.plot",
+        "documentation": {}
+    }
+]
